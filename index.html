@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find and book great stays from $50 per night.">
+    <title>Booking | Plan Your Vacation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <!-- Hero groups the main navigation, booking pitch, and search controls. -->
+    <header class="hero">
+        <nav class="navbar" aria-label="Main">
+            <a href="#" class="logo">Booking</a>
+            <div class="nav-item-container">
+                <a href="#" class="nav-item removable-nav-item">About</a>
+                <a href="#" class="nav-item removable-nav-item">Contact</a>
+                <a href="#stays" class="nav-item nav-cta">Book Now</a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Plan your vacation today</h1>
+            <p class="hero-sub">Handpicked stays by the sea, the lake and the mountains, from $50 a night.</p>
+            <!-- Search is presentation-only until destination lookup is implemented. -->
+            <form class="search-container" role="search" onsubmit="return false">
+                <label class="field"><span>Where</span><input type="search" placeholder="Search destinations"></label>
+                <label class="field"><span>Check in</span><input type="date"></label>
+                <label class="field"><span>Check out</span><input type="date"></label>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <!-- Listing cards share one repeated image, rating, details, and booking-link pattern. -->
+        <section class="listings" id="stays">
+            <div class="section-head">
+                <h2>Popular stays</h2>
+                <p>8 places available</p>
+            </div>
+            <div class="image-panel-container">
+                <article class="card">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/744721174.webp?k=c2b42bb3ee0f31940fb8bf7260f7ec3663d560c7d76cc17817755325bf0948e4&o=" alt="Seaside Suite" width="1024" height="768" loading="lazy">
+                    <span class="rating">★ 4.9</span>
+                    <div class="card-body">
+                        <div>
+                            <h3 class="panel-title">Seaside Suite</h3>
+                            <p class="place">Coastal getaway</p>
+                            <p class="price"><strong>$50</strong> / night</p>
+                        </div>
+                        <a href="#" class="purchase-btn" aria-label="Book Seaside Suite">Book</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/897435683.webp?k=8372d1139ffda9356e13ca618d3617a29860427adb3d8529c96ecc6ab6c078d5&o=" alt="Garden Retreat" width="1024" height="768" loading="lazy">
+                    <span class="rating">★ 4.8</span>
+                    <div class="card-body">
+                        <div>
+                            <h3 class="panel-title">Garden Retreat</h3>
+                            <p class="place">Quiet countryside</p>
+                            <p class="price"><strong>$50</strong> / night</p>
+                        </div>
+                        <a href="#" class="purchase-btn" aria-label="Book Garden Retreat">Book</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/485524354.webp?k=bc9159c9bce329a9d9aae4640a397bf3cbbff92da2fdcc22e857b47a5b7de009&o=" alt="City View Loft" width="1024" height="768" loading="lazy">
+                    <span class="rating">★ 4.7</span>
+                    <div class="card-body">
+                        <div>
+                            <h3 class="panel-title">City View Loft</h3>
+                            <p class="place">Downtown</p>
+                            <p class="price"><strong>$50</strong> / night</p>
+                        </div>
+                        <a href="#" class="purchase-btn" aria-label="Book City View Loft">Book</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/897435683.webp?k=8372d1139ffda9356e13ca618d3617a29860427adb3d8529c96ecc6ab6c078d5&o=" alt="Cozy Studio" width="1024" height="768" loading="lazy">
+                    <span class="rating">★ 4.8</span>
+                    <div class="card-body">
+                        <div>
+                            <h3 class="panel-title">Cozy Studio</h3>
+                            <p class="place">Near the park</p>
+                            <p class="price"><strong>$50</strong> / night</p>
+                        </div>
+                        <a href="#" class="purchase-btn" aria-label="Book Cozy Studio">Book</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/763313913.webp?k=bcbd3f99e9a2ea82fc9684eef3ebe9d6d357f7ed89bb21aa232978dec4235f0b&o=" alt="Lakeside Cabin" width="1024" height="768" loading="lazy">
+                    <span class="rating">★ 4.9</span>
+                    <div class="card-body">
+                        <div>
+                            <h3 class="panel-title">Lakeside Cabin</h3>
+                            <p class="place">By the lake</p>
+                            <p class="price"><strong>$50</strong> / night</p>
+                        </div>
+                        <a href="#" class="purchase-btn" aria-label="Book Lakeside Cabin">Book</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/744721174.webp?k=c2b42bb3ee0f31940fb8bf7260f7ec3663d560c7d76cc17817755325bf0948e4&o=" alt="Harbor Room" width="1024" height="768" loading="lazy">
+                    <span class="rating">★ 4.7</span>
+                    <div class="card-body">
+                        <div>
+                            <h3 class="panel-title">Harbor Room</h3>
+                            <p class="place">Waterfront</p>
+                            <p class="price"><strong>$50</strong> / night</p>
+                        </div>
+                        <a href="#" class="purchase-btn" aria-label="Book Harbor Room">Book</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/374715092.webp?k=cb3ace017fd61cffacb83a42ac7d244cf64d636449aab074d4a141d2ee3ae141&o=" alt="Mountain Lodge" width="1024" height="768" loading="lazy">
+                    <span class="rating">★ 4.9</span>
+                    <div class="card-body">
+                        <div>
+                            <h3 class="panel-title">Mountain Lodge</h3>
+                            <p class="place">Highlands</p>
+                            <p class="price"><strong>$50</strong> / night</p>
+                        </div>
+                        <a href="#" class="purchase-btn" aria-label="Book Mountain Lodge">Book</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/897435683.webp?k=8372d1139ffda9356e13ca618d3617a29860427adb3d8529c96ecc6ab6c078d5&o=" alt="Old Town Flat" width="1024" height="768" loading="lazy">
+                    <span class="rating">★ 4.6</span>
+                    <div class="card-body">
+                        <div>
+                            <h3 class="panel-title">Old Town Flat</h3>
+                            <p class="place">Historic centre</p>
+                            <p class="price"><strong>$50</strong> / night</p>
+                        </div>
+                        <a href="#" class="purchase-btn" aria-label="Book Old Town Flat">Book</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
